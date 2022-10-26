@@ -12,11 +12,12 @@ const Comment=({index, comment, replies, currentUserId, deleteComment, activeCom
     const isEditing=activeComment&&activeComment.type==="editing"&&activeComment.id===comment.id;
     const replyId=parentId?parentId:comment.id;
     const [showReply, setShowReply] = React.useState(false);
+    
    
     return( 
     <div className="comment">
        <div className="comment-image-container">
-        <img src="../img/ava.png" width={50} height={50} alt="ava" />
+        <img src="/img/ava.png" width={50} height={50} alt="ava" />
        </div>
        <div className="comment-right-part">
         <div className="comment-content">
