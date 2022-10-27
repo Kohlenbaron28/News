@@ -1,5 +1,6 @@
 import CommentForm from "./CommentForm";
 import React from "react";
+import logo from './img/ava.png';
 
 const Comment=({index, comment, replies, currentUserId, deleteComment, activeComment, updateComment, setActiveComment, addComment, parentId=null})=>{
     const fiveMinutes=300000;
@@ -17,7 +18,7 @@ const Comment=({index, comment, replies, currentUserId, deleteComment, activeCom
     return( 
     <div className="comment">
        <div className="comment-image-container">
-        <img src="/public/img/ava.png" width={50} height={50} alt="ava" />
+        <img src={logo} width={50} height={50} alt="ava" />
        </div>
        <div className="comment-right-part">
         <div className="comment-content">
